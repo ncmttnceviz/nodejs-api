@@ -10,7 +10,6 @@ import {userLogProcessor} from "@processor/user-log.processor";
 import {ResponseOrganizer} from "@app/services/response-organizer.service";
 import {sendEmailProcessor} from "@processor/send-email.processor";
 
-
 export class AuthController {
 
     async register(req: Request, res: Response, next: NextFunction): Promise<void> {
