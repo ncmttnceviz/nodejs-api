@@ -27,6 +27,6 @@ export const postgresConnect = async () => {
     const envFields = ['PG_HOST', 'PG_PORT', 'PG_USER', 'PG_PASS', 'PG_DATABASE'];
     appHelper.checkEnvFields(envFields);
     return await postgres.initialize().catch((err) => {
-        throw new Error('Postgres Connection Error')
+        throw new err
     })
 }
